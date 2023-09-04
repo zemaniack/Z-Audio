@@ -1,0 +1,12 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #0E402D;
+  --tertiary-color: #295135;
+  --highlight-color: #9FCC2E;
+  --text-color: #5A6650;
+  font-family: Courier New, monospace;
+}
+
+.page-container {
+  position: relative;
+}
