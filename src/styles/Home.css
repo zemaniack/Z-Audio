@@ -16,6 +16,8 @@ bc6c25 */
 
 .page-container {
   position: relative;
+  background-color: var(--primary-color);
+  height: 100%;
 }
 
 .first-section {
@@ -23,6 +25,10 @@ bc6c25 */
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
+  /* background-image: url("../../public/subwoofer.jpg");
+  background-size: contain;
+  background-position: center ; */
+  text-shadow: var(--primary-color) 1px 1px 2px;
 }
 
 .first-section-item {
@@ -30,13 +36,75 @@ bc6c25 */
 }
 
 .first-section-text {
-  background-image: url("../../public/subwoofer.jpg");
-  background-size: cover;
   width: 30vw;
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-weight: bold;
 }
 
-.first-section-info {
+.first-section-text:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .25s;
+}
+
+.first-section-grid-container {
   width: 50vw;
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  grid-gap: 10px;
+  justify-content: center;
+  
+}
+
+.fsg-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .25s;
+}
+
+.fsg-item-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.fsg-item-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.fsg-item-three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.fsg-item-four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.fsg-item-five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.fsg-item-six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
 }
