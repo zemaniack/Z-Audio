@@ -7,6 +7,36 @@
   font-family: Courier New, monospace;
 }
 
+/* alt colors:
+606c38
+283618
+fefae0
+dda15e
+bc6c25 */
+
 .page-container {
   position: relative;
+}
+
+.first-section {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first-section-item {
+  padding: 25px;
+}
+
+.first-section-text {
+  background-image: url("../../public/subwoofer.jpg");
+  background-size: cover;
+  width: 30vw;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.first-section-info {
+  width: 50vw;
 }

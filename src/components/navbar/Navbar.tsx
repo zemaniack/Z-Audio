@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../styles/Navbar.css';
 import { CgProfile } from 'react-icons/cg'
+import { SearchBar } from '../SearchBar';
 
 export const Navbar = () => {
     
@@ -16,7 +17,7 @@ export const Navbar = () => {
         <div className="navbar-container">
             <div className='navbar-item-container navbar-logo-item'>
               <div 
-                className='navbar-logo '
+                className='navbar-logo'
                 onClick={() => navigate('/')}
               >
                 Z-Audio
@@ -24,6 +25,11 @@ export const Navbar = () => {
             </div>
 
             <div className='navbar-right'>
+              <div className='navbar-item-container'>
+                <div className='navbar-searchbar'>
+                  <SearchBar />
+                </div>
+              </div>
               <div className='navbar-item-container'>
                 <div 
                   className='navbar-products navbar-item'
