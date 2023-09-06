@@ -1,0 +1,75 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  /* border: white 2px solid; */
+}
+
+.square {
+  border: 2px solid white;
+  height: 100%;
+  width: 100%;
+  font-size: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square.square-one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.square.square-two {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.square.square-three {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.square.square-four {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.square.square-five {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.square.square-six {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.square.square-seven {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.square.square-eight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.square.square-nine {
+  grid-column: 3;
+  grid-row: 3;
+}

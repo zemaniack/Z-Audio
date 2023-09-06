@@ -21,10 +21,11 @@ export const Home = () => {
       <div 
         className='first-section'
         style={{
-          backgroundImage:"url(../../public/subwoofer.jpg)",
+          backgroundImage:"url(./subwoofer.jpg)",
           backgroundPosition: `${position.x/movementRatio}px ${position.y/movementRatio}px`,
-          transition: '0.2s',
+          transition: '0.1s',
           backgroundSize: "400px 400px",
+          boxShadow: "0 0 20px 20px black inset"
         }}
       >
         <div className='first-section-text first-section-item'>
@@ -46,10 +47,6 @@ export const Home = () => {
             Why us?
           </h3> 
           <div className='first-section-grid-container'>
-            {/* Here we are going to make a grid of different reasons that you should buy
-            from us. First reason is the quality of our products. Second is the cheap / value
-            reason. Third is small business / not corporate with markups. Fourth is reuse
-            value. Fifth is customisability. Sixth is innovative tech add ons, like screen. */}
             <div className='fsg-item fsg-item-one'>
               <h4>
                 Quality

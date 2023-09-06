@@ -7,7 +7,7 @@ import { About } from './pages/About'
 import { Navbar } from './components/navbar/Navbar'
 import { ConfigProvider, theme, AutoComplete } from 'antd'
 import { Profile } from './pages/Profile';
-import { Product } from './pages/Product';
+import { Products } from './pages/Products';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -25,7 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/products" element={<Product />} />
+            <Route path="/products" element={<Products />} />
           </Routes>
         </div>
       </ConfigProvider>

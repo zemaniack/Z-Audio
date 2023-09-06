@@ -52,7 +52,6 @@
 
 .navbar-logo-item {
     padding-left: auto;
-    /* border: red 1px solid; */
     flex-grow: 1;
 }
 
@@ -60,6 +59,11 @@
     font-size: 4vh;
     font-weight: bold;
     transition: .25s;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar-logo:hover {

@@ -1,5 +1,10 @@
+import { Tictactoe } from './Tictactoe'
+
 export const Products = () => {
   return (
-    <div>Products Page</div>
+    <div>
+      Products Page
+      <Tictactoe />
+    </div>
   )
 }
